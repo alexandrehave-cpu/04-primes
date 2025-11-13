@@ -13,13 +13,7 @@ def isprime(p):
     Returns:
         bool: True si p est un nombre premier, False sinon.
 
-    Examples:
-        >>> isprime(2)
-        True
-        >>> isprime(4)
-        False
-        >>> isprime(17)
-        True
+    
     """
     if p < 2:
         return False
