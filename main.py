@@ -1,4 +1,13 @@
+"""
+Module de test de nombres premiers.
+
+Ce module définit une fonction isprime() qui permet de déterminer si un entier est
+un nombre premier, ainsi qu'une fonction main() qui affiche les nombres premiers
+strictement inférieurs à 100.
+"""
+
 from math import sqrt
+
 
 def isprime(p):
     """
@@ -12,8 +21,6 @@ def isprime(p):
 
     Returns:
         bool: True si p est un nombre premier, False sinon.
-
-    
     """
     if p < 2:
         return False
@@ -37,10 +44,6 @@ def main():
 
     Returns:
         None
-
-    Example:
-        >>> main()
-        2, 3, 5, 7, 11, 13, 17, ...
     """
     for n in range(100):
         if isprime(n):
@@ -48,6 +51,5 @@ def main():
     print()  # retour à la ligne final
 
 
-if __name__ == "__main__":
-    main()
-
+    if __name__ == "__main__":
+        main()
